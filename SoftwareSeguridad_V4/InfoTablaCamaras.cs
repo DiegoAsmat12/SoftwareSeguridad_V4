@@ -16,5 +16,27 @@ namespace SoftwareSeguridad_V4
         {
             InitializeComponent();
         }
+
+        private async void InfoTablaCamaras_Load(object sender, EventArgs e)
+        {
+            await LlenarTablaCamaras();
+        }
+        private async Task LlenarTablaCamaras()
+        {
+            DataTable table = new DataTable();
+            await Task.Run(() =>
+            {
+                table.Columns.Add("Id", typeof(int));
+                table.Columns.Add("Nombre", typeof(string));
+                table.Columns.Add("Direccion", typeof(string));
+                table.Columns.Add("Latitud", typeof(double));
+                table.Columns.Add("Longitud", typeof(double));
+                table.Columns.Add("Estado", typeof(string));
+
+                
+            });
+            dataGridViewTablaCamaras.DataSource = table;
+
+        }
     }
 }
