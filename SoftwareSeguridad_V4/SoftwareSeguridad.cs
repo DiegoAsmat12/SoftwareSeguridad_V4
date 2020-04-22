@@ -33,6 +33,7 @@ namespace SoftwareSeguridad_V4
             AbrirFormularioVistas<VistaMapa>(panelVistas);
             buttonVistaCamaras.BackColor = Color.FromArgb(80, 80, 80);
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
 
 
             //imagenOriginalBotonExpandir = buttonExpandirContraer.BackgroundImage;
@@ -164,6 +165,7 @@ namespace SoftwareSeguridad_V4
         private void buttonVistaSeguimiento_Click(object sender, EventArgs e)
         {
             AbrirFormularioVistas<VistaSeguimiento>(panelVistas);
+            AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
             buttonVistaSeguimiento.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaMapa.BackColor = Color.FromArgb(50, 50, 50);
@@ -180,14 +182,13 @@ namespace SoftwareSeguridad_V4
         private void buttonTablaCamaras1_Click(object sender, EventArgs e)
         {
             panelOpcionesDeInformacion1.Height = 0;
-            buttonSeleccionDeInfo1.Text = buttonTablaCamaras1.Text;
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
         }
 
         private void buttonTablaPlacas1_Click(object sender, EventArgs e)
         {
-
             panelOpcionesDeInformacion1.Height = 0;
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
         }
 
         private void buttonTablaListaNegra1_Click(object sender, EventArgs e)
@@ -211,6 +212,7 @@ namespace SoftwareSeguridad_V4
         private void buttonTablaPlacas2_Click(object sender, EventArgs e)
         {
             panelOpcionesDeInformacion2.Height = 0;
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm2);
         }
 
         private void buttonTablaListaNegra2_Click(object sender, EventArgs e)

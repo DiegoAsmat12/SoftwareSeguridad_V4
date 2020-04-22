@@ -84,6 +84,12 @@
     <Compile Include="InfoTablaCamaras.Designer.cs">
       <DependentUpon>InfoTablaCamaras.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoTablaPlacas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoTablaPlacas.Designer.cs">
+      <DependentUpon>InfoTablaPlacas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SoftwareSeguridad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="InfoTablaCamaras.resx">
       <DependentUpon>InfoTablaCamaras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoTablaPlacas.resx">
+      <DependentUpon>InfoTablaPlacas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
