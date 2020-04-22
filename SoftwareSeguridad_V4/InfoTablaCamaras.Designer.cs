@@ -92,9 +92,11 @@
             this.dataGridViewTablaCamaras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewTablaCamaras.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewTablaCamaras.EnableHeadersVisualStyles = false;
+            this.dataGridViewTablaCamaras.GridColor = System.Drawing.Color.Black;
             this.dataGridViewTablaCamaras.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewTablaCamaras.Name = "dataGridViewTablaCamaras";
             this.dataGridViewTablaCamaras.ReadOnly = true;
+            this.dataGridViewTablaCamaras.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;

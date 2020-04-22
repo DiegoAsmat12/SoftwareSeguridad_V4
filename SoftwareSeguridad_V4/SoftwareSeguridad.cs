@@ -165,7 +165,7 @@ namespace SoftwareSeguridad_V4
         private void buttonVistaSeguimiento_Click(object sender, EventArgs e)
         {
             AbrirFormularioVistas<VistaSeguimiento>(panelVistas);
-            AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
             buttonVistaSeguimiento.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaMapa.BackColor = Color.FromArgb(50, 50, 50);

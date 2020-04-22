@@ -179,9 +179,11 @@
             this.dataGridViewTablaPlacas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewTablaPlacas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewTablaPlacas.EnableHeadersVisualStyles = false;
+            this.dataGridViewTablaPlacas.GridColor = System.Drawing.Color.Black;
             this.dataGridViewTablaPlacas.Location = new System.Drawing.Point(0, 57);
             this.dataGridViewTablaPlacas.Name = "dataGridViewTablaPlacas";
             this.dataGridViewTablaPlacas.ReadOnly = true;
+            this.dataGridViewTablaPlacas.RowHeadersVisible = false;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
