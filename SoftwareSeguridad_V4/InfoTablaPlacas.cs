@@ -14,6 +14,7 @@ namespace SoftwareSeguridad_V4
     {
         public DataTable table;
         public int cantidadDeDatos;
+        public int height;
         public InfoTablaPlacas()
         {
             InitializeComponent();
@@ -21,6 +22,9 @@ namespace SoftwareSeguridad_V4
 
         private void InfoTablaPlacas_Load(object sender, EventArgs e)
         {
+            splitContainerInfoTablaPlacas.SplitterDistance=this.Height-405;
+            splitContainerInfoTablaPlacas.Panel2Collapsed = true;
+            height = splitContainerInfoTablaPlacas.SplitterDistance;
             LlenarTablaPlacas();
         }
         private void LlenarTablaPlacas()
@@ -47,6 +51,30 @@ namespace SoftwareSeguridad_V4
 
                 dataGridViewTablaPlacas.DataSource = table;
             }
+        }
+
+        private void expandirButtonDenuncia_Click(object sender, EventArgs e)
+        {
+            if (splitContainerInfoTablaPlacas.Panel2Collapsed)
+            {
+                expandirButtonDenuncia.Image = Properties.Resources.IconoContraerVertical;
+                splitContainerInfoTablaPlacas.Panel2Collapsed = false;
+            }
+            else
+            {
+                expandirButtonDenuncia.Image = Properties.Resources.IconoExpandirVertical;
+                splitContainerInfoTablaPlacas.Panel2Collapsed = true;
+            }
+            if (splitContainerInfoTablaPlacas.SplitterDistance <= 200)
+            {
+                splitContainerInfoTablaPlacas.SplitterDistance =0;
+            }
+            if(splitContainerInfoTablaPlacas.SplitterDistance > 200)
+            {
+                splitContainerInfoTablaPlacas.SplitterDistance = height;
+            }
+
+
         }
     }
 }

@@ -78,6 +78,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlesPersonalizados\ExpandirButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="InfoTablaCamaras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +92,11 @@
     </Compile>
     <Compile Include="InfoTablaPlacas.Designer.cs">
       <DependentUpon>InfoTablaPlacas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SoftwareSeguridad.cs">
       <SubType>Form</SubType>
@@ -124,14 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SoftwareSeguridad.resx">
       <DependentUpon>SoftwareSeguridad.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,10 +162,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IconosParaLaInterfaz\FlechaContraer.png" />
-    <Content Include="IconosParaLaInterfaz\FlechaExpandir.png" />
+    <Content Include="IconosParaLaInterfaz\FlechaContraerHorizontal.png" />
+    <Content Include="IconosParaLaInterfaz\FlechaExpandirHorizontal.png" />
     <Content Include="IconosParaLaInterfaz\IconoBotonAyuda.jpg" />
     <Content Include="IconosParaLaInterfaz\IconoCandado.jpg" />
+    <Content Include="IconosParaLaInterfaz\IconoContraerVertical.png" />
+    <Content Include="IconosParaLaInterfaz\IconoExpandirVertical.png" />
     <Content Include="IconosParaLaInterfaz\IconoLlave.jpg" />
     <Content Include="IconosParaLaInterfaz\IconoSeguimiento.jpg" />
     <Content Include="IconosParaLaInterfaz\IconoSidePanel.jpg" />

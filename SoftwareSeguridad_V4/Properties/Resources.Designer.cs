@@ -63,9 +63,9 @@ namespace SoftwareSeguridad_V4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FlechaContraer {
+        internal static System.Drawing.Bitmap FlechaContraerHorizontal {
             get {
-                object obj = ResourceManager.GetObject("FlechaContraer", resourceCulture);
+                object obj = ResourceManager.GetObject("FlechaContraerHorizontal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace SoftwareSeguridad_V4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FlechaExpandir {
+        internal static System.Drawing.Bitmap FlechaExpandirHorizontal {
             get {
-                object obj = ResourceManager.GetObject("FlechaExpandir", resourceCulture);
+                object obj = ResourceManager.GetObject("FlechaExpandirHorizontal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +96,26 @@ namespace SoftwareSeguridad_V4.Properties {
         internal static System.Drawing.Bitmap IconoCandado {
             get {
                 object obj = ResourceManager.GetObject("IconoCandado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconoContraerVertical {
+            get {
+                object obj = ResourceManager.GetObject("IconoContraerVertical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconoExpandirVertical {
+            get {
+                object obj = ResourceManager.GetObject("IconoExpandirVertical", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

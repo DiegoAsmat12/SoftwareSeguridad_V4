@@ -226,12 +226,13 @@
             // 
             // panelOpcionesDeInformacion1
             // 
+            this.panelOpcionesDeInformacion1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelOpcionesDeInformacion1.BackColor = System.Drawing.Color.Black;
             this.panelOpcionesDeInformacion1.Controls.Add(this.buttonTablaSerenazgos1);
             this.panelOpcionesDeInformacion1.Controls.Add(this.buttonTablaListaNegra1);
             this.panelOpcionesDeInformacion1.Controls.Add(this.buttonTablaPlacas1);
             this.panelOpcionesDeInformacion1.Controls.Add(this.buttonTablaCamaras1);
-            this.panelOpcionesDeInformacion1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOpcionesDeInformacion1.Location = new System.Drawing.Point(0, 0);
             this.panelOpcionesDeInformacion1.Name = "panelOpcionesDeInformacion1";
             this.panelOpcionesDeInformacion1.Size = new System.Drawing.Size(380, 96);
@@ -345,12 +346,13 @@
             // 
             // panelOpcionesDeInformacion2
             // 
+            this.panelOpcionesDeInformacion2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelOpcionesDeInformacion2.BackColor = System.Drawing.Color.Black;
             this.panelOpcionesDeInformacion2.Controls.Add(this.buttonTablaSerenazgos2);
             this.panelOpcionesDeInformacion2.Controls.Add(this.buttonTablaListaNegra2);
             this.panelOpcionesDeInformacion2.Controls.Add(this.buttonTablaPlacas2);
             this.panelOpcionesDeInformacion2.Controls.Add(this.buttonTablaCamaras2);
-            this.panelOpcionesDeInformacion2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOpcionesDeInformacion2.Location = new System.Drawing.Point(0, 0);
             this.panelOpcionesDeInformacion2.Name = "panelOpcionesDeInformacion2";
             this.panelOpcionesDeInformacion2.Size = new System.Drawing.Size(380, 96);
