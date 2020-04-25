@@ -14,7 +14,6 @@ namespace SoftwareSeguridad_V4
     {
         public DataTable table;
         public int cantidadDeDatos;
-        public int height;
         public InfoTablaPlacas()
         {
             InitializeComponent();
@@ -23,7 +22,6 @@ namespace SoftwareSeguridad_V4
         private void InfoTablaPlacas_Load(object sender, EventArgs e)
         {
             splitContainerInfoTablaPlacas.Panel2Collapsed = true;
-            height = splitContainerInfoTablaPlacas.SplitterDistance;
             LlenarTablaPlacas();
         }
         private void LlenarTablaPlacas()

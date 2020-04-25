@@ -87,11 +87,23 @@
     <Compile Include="InfoTablaCamaras.Designer.cs">
       <DependentUpon>InfoTablaCamaras.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoTablaListaNegra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoTablaListaNegra.Designer.cs">
+      <DependentUpon>InfoTablaListaNegra.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoTablaPlacas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InfoTablaPlacas.Designer.cs">
       <DependentUpon>InfoTablaPlacas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTablaSerenazgos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoTablaSerenazgos.Designer.cs">
+      <DependentUpon>InfoTablaSerenazgos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,8 +139,14 @@
     <EmbeddedResource Include="InfoTablaCamaras.resx">
       <DependentUpon>InfoTablaCamaras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InfoTablaListaNegra.resx">
+      <DependentUpon>InfoTablaListaNegra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoTablaPlacas.resx">
       <DependentUpon>InfoTablaPlacas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoTablaSerenazgos.resx">
+      <DependentUpon>InfoTablaSerenazgos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

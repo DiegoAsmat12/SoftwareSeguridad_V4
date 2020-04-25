@@ -25,8 +25,8 @@ namespace SoftwareSeguridad_V4
         private void SoftwareSeguridad_Load(object sender, EventArgs e)
         {
             panelOpcionesInicio.Height = 0;
-            panelOpcionesDeInformacion1.Height = 0;
-            panelOpcionesDeInformacion2.Height = 0;
+            panelOpcionesDeInformacion1.Hide();
+            panelOpcionesDeInformacion2.Hide();
             splitContainerInformacion.SplitterDistance = panelInformacion.Height;
             AbrirFormularioVistas<VistaCamaras>(panelVistas);
             AbrirFormularioVistas<VistaSeguimiento>(panelVistas);
@@ -34,6 +34,12 @@ namespace SoftwareSeguridad_V4
             buttonVistaCamaras.BackColor = Color.FromArgb(80, 80, 80);
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm2);
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm2);
+            AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm2);
+            AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm2);
 
 
             //imagenOriginalBotonExpandir = buttonExpandirContraer.BackgroundImage;
@@ -131,27 +137,27 @@ namespace SoftwareSeguridad_V4
 
         private void buttonSeleccionDeInfo1_Click(object sender, EventArgs e)
         {
-            if (panelOpcionesDeInformacion1.Height == 0)
+            if (panelOpcionesDeInformacion1.Visible==false)
             {
+                panelOpcionesDeInformacion1.Show();
                 panelOpcionesDeInformacion1.BringToFront();
-                panelOpcionesDeInformacion1.Height = 96;
             }
             else
             {
-                panelOpcionesDeInformacion1.Height = 0;
+                panelOpcionesDeInformacion1.Hide();
             }
         }
 
         private void buttonSeleccionDeInfo2_Click(object sender, EventArgs e)
         {
-            if (panelOpcionesDeInformacion2.Height == 0)
+            if (panelOpcionesDeInformacion2.Visible == false)
             {
+                panelOpcionesDeInformacion2.Show();
                 panelOpcionesDeInformacion2.BringToFront();
-                panelOpcionesDeInformacion2.Height = 96;
             }
             else
             {
-                panelOpcionesDeInformacion2.Height = 0;
+                panelOpcionesDeInformacion2.Hide();
             }
         }
 
@@ -159,6 +165,9 @@ namespace SoftwareSeguridad_V4
         {
             AbrirFormularioVistas<VistaCamaras>(panelVistas);
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm2);
+            panelOpcionesDeInformacion1.Height = 0;
+            panelOpcionesDeInformacion2.Height = 0;
             splitContainerInformacion.SplitterDistance = this.Height;
             buttonVistaCamaras.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaSeguimiento.BackColor = Color.FromArgb(50, 50, 50);
@@ -169,8 +178,10 @@ namespace SoftwareSeguridad_V4
         {
             AbrirFormularioVistas<VistaSeguimiento>(panelVistas);
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm2);
+            panelOpcionesDeInformacion1.Hide();
+            panelOpcionesDeInformacion2.Hide();
             splitContainerInformacion.SplitterDistance = this.Height;
-            splitContainerInformacion.Enabled = false;
             buttonVistaSeguimiento.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaMapa.BackColor = Color.FromArgb(50, 50, 50);
@@ -179,6 +190,10 @@ namespace SoftwareSeguridad_V4
         private void buttonVistaMapa_Click(object sender, EventArgs e)
         {
             AbrirFormularioVistas<VistaMapa>(panelVistas);
+            AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm1);
+            AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm2);
+            panelOpcionesDeInformacion1.Hide();
+            panelOpcionesDeInformacion2.Hide();
             splitContainerInformacion.SplitterDistance = 469;
             buttonVistaMapa.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
@@ -187,48 +202,50 @@ namespace SoftwareSeguridad_V4
 
         private void buttonTablaCamaras1_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion1.Height = 0;
+            panelOpcionesDeInformacion1.Hide();
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
         }
 
         private void buttonTablaPlacas1_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion1.Height = 0;
+            panelOpcionesDeInformacion1.Hide();
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
         }
 
         private void buttonTablaListaNegra1_Click(object sender, EventArgs e)
         {
-
-            panelOpcionesDeInformacion1.Height = 0;
+            panelOpcionesDeInformacion1.Hide();
+            AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm1);
         }
 
         private void buttonTablaSerenazgos1_Click(object sender, EventArgs e)
         {
-
-            panelOpcionesDeInformacion1.Height = 0;
+            panelOpcionesDeInformacion1.Hide();
+            AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm1);
         }
 
         private void buttonTablaCamaras2_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion2.Height = 0;
+            panelOpcionesDeInformacion2.Hide();
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm2);
         }
 
         private void buttonTablaPlacas2_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion2.Height = 0;
+            panelOpcionesDeInformacion2.Hide();
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm2);
         }
 
         private void buttonTablaListaNegra2_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion2.Height = 0;
+            panelOpcionesDeInformacion2.Hide();
+            AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm2);
         }
 
         private void buttonTablaSerenazgos2_Click(object sender, EventArgs e)
         {
-            panelOpcionesDeInformacion2.Height = 0;
+            panelOpcionesDeInformacion2.Hide();
+            AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm2);
         }
 
         

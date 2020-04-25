@@ -12,6 +12,7 @@ namespace SoftwareSeguridad_V4
 {
     public partial class InfoTablaCamaras : Form
     {
+        DataTable table;
         public InfoTablaCamaras()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace SoftwareSeguridad_V4
         }
         private async Task LlenarTablaCamaras()
         {
-            DataTable table = new DataTable();
+            table = new DataTable();
             await Task.Run(() =>
             {
                 table.Columns.Add("Id", typeof(int));
