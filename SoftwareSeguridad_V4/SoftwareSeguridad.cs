@@ -159,6 +159,7 @@ namespace SoftwareSeguridad_V4
         {
             AbrirFormularioVistas<VistaCamaras>(panelVistas);
             AbrirFormularioVistas<InfoTablaCamaras>(panelInfoForm1);
+            splitContainerInformacion.SplitterDistance = this.Height;
             buttonVistaCamaras.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaSeguimiento.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaMapa.BackColor = Color.FromArgb(50, 50, 50);
@@ -168,6 +169,8 @@ namespace SoftwareSeguridad_V4
         {
             AbrirFormularioVistas<VistaSeguimiento>(panelVistas);
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm1);
+            splitContainerInformacion.SplitterDistance = this.Height;
+            splitContainerInformacion.Enabled = false;
             buttonVistaSeguimiento.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaMapa.BackColor = Color.FromArgb(50, 50, 50);
@@ -176,6 +179,7 @@ namespace SoftwareSeguridad_V4
         private void buttonVistaMapa_Click(object sender, EventArgs e)
         {
             AbrirFormularioVistas<VistaMapa>(panelVistas);
+            splitContainerInformacion.SplitterDistance = 469;
             buttonVistaMapa.BackColor = Color.FromArgb(80, 80, 80);
             buttonVistaCamaras.BackColor = Color.FromArgb(50, 50, 50);
             buttonVistaSeguimiento.BackColor = Color.FromArgb(50, 50, 50);

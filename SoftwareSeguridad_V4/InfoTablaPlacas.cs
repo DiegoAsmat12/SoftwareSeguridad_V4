@@ -64,16 +64,10 @@ namespace SoftwareSeguridad_V4
                 expandirButtonDenuncia.Image = Properties.Resources.IconoExpandirVertical;
                 splitContainerInfoTablaPlacas.Panel2Collapsed = true;
             }
-            if (splitContainerInfoTablaPlacas.SplitterDistance <= 200)
+            if (splitContainerInfoTablaPlacas.SplitterDistance <= 469)
             {
                 splitContainerInfoTablaPlacas.SplitterDistance =0;
             }
-            if(splitContainerInfoTablaPlacas.SplitterDistance > 200)
-            {
-                splitContainerInfoTablaPlacas.SplitterDistance = height;
-            }
-
-
         }
     }
 }

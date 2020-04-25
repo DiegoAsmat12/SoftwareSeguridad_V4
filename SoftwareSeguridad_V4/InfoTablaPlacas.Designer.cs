@@ -86,6 +86,7 @@
             // splitContainerInfoTablaPlacas.Panel2
             // 
             this.splitContainerInfoTablaPlacas.Panel2.Controls.Add(this.panelDenunciaYImagen);
+            this.splitContainerInfoTablaPlacas.Panel2MinSize = 0;
             this.splitContainerInfoTablaPlacas.Size = new System.Drawing.Size(364, 792);
             this.splitContainerInfoTablaPlacas.SplitterDistance = 417;
             this.splitContainerInfoTablaPlacas.TabIndex = 0;
@@ -269,7 +270,6 @@
             this.splitContainerImagenesDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.splitContainerImagenesDenuncia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerImagenesDenuncia.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerImagenesDenuncia.MinimumSize = new System.Drawing.Size(0, 398);
             this.splitContainerImagenesDenuncia.Name = "splitContainerImagenesDenuncia";
             this.splitContainerImagenesDenuncia.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -282,7 +282,7 @@
             // 
             this.splitContainerImagenesDenuncia.Panel2.Controls.Add(this.panelDenuncia);
             this.splitContainerImagenesDenuncia.Panel2MinSize = 104;
-            this.splitContainerImagenesDenuncia.Size = new System.Drawing.Size(364, 398);
+            this.splitContainerImagenesDenuncia.Size = new System.Drawing.Size(364, 388);
             this.splitContainerImagenesDenuncia.SplitterDistance = 280;
             this.splitContainerImagenesDenuncia.TabIndex = 0;
             // 
@@ -337,7 +337,7 @@
             this.panelDenuncia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDenuncia.Location = new System.Drawing.Point(0, 0);
             this.panelDenuncia.Name = "panelDenuncia";
-            this.panelDenuncia.Size = new System.Drawing.Size(364, 114);
+            this.panelDenuncia.Size = new System.Drawing.Size(364, 104);
             this.panelDenuncia.TabIndex = 0;
             // 
             // labelColoquePlaca
@@ -359,7 +359,7 @@
             this.ButtonAlerta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAlerta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonAlerta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.ButtonAlerta.Location = new System.Drawing.Point(259, 49);
+            this.ButtonAlerta.Location = new System.Drawing.Point(259, 44);
             this.ButtonAlerta.Name = "ButtonAlerta";
             this.ButtonAlerta.Size = new System.Drawing.Size(75, 25);
             this.ButtonAlerta.TabIndex = 7;
@@ -373,7 +373,7 @@
             this.textBoxPlacaDenuncia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPlacaDenuncia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPlacaDenuncia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.textBoxPlacaDenuncia.Location = new System.Drawing.Point(16, 48);
+            this.textBoxPlacaDenuncia.Location = new System.Drawing.Point(16, 43);
             this.textBoxPlacaDenuncia.Name = "textBoxPlacaDenuncia";
             this.textBoxPlacaDenuncia.Size = new System.Drawing.Size(217, 26);
             this.textBoxPlacaDenuncia.TabIndex = 6;
