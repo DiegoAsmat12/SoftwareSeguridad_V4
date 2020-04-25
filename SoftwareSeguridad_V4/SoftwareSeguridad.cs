@@ -133,6 +133,7 @@ namespace SoftwareSeguridad_V4
         {
             if (panelOpcionesDeInformacion1.Height == 0)
             {
+                panelOpcionesDeInformacion1.BringToFront();
                 panelOpcionesDeInformacion1.Height = 96;
             }
             else
@@ -145,6 +146,7 @@ namespace SoftwareSeguridad_V4
         {
             if (panelOpcionesDeInformacion2.Height == 0)
             {
+                panelOpcionesDeInformacion2.BringToFront();
                 panelOpcionesDeInformacion2.Height = 96;
             }
             else

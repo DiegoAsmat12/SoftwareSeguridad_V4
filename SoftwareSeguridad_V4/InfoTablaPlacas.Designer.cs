@@ -32,7 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainerInfoTablaPlacas = new System.Windows.Forms.SplitContainer();
             this.panelInformacion = new System.Windows.Forms.Panel();
-            this.expandirButtonDenuncia = new SoftwareSeguridad_V4.ExpandirButton();
             this.dataGridViewTablaPlacas = new System.Windows.Forms.DataGridView();
             this.panelBusqueda = new System.Windows.Forms.Panel();
             this.maskedTextBoxNumeroDePagina = new System.Windows.Forms.MaskedTextBox();
@@ -52,6 +51,7 @@
             this.labelColoquePlaca = new System.Windows.Forms.Label();
             this.ButtonAlerta = new System.Windows.Forms.Button();
             this.textBoxPlacaDenuncia = new System.Windows.Forms.TextBox();
+            this.expandirButtonDenuncia = new SoftwareSeguridad_V4.ExpandirButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerInfoTablaPlacas)).BeginInit();
             this.splitContainerInfoTablaPlacas.Panel1.SuspendLayout();
             this.splitContainerInfoTablaPlacas.Panel2.SuspendLayout();
@@ -87,7 +87,7 @@
             // 
             this.splitContainerInfoTablaPlacas.Panel2.Controls.Add(this.panelDenunciaYImagen);
             this.splitContainerInfoTablaPlacas.Size = new System.Drawing.Size(364, 792);
-            this.splitContainerInfoTablaPlacas.SplitterDistance = 390;
+            this.splitContainerInfoTablaPlacas.SplitterDistance = 417;
             this.splitContainerInfoTablaPlacas.TabIndex = 0;
             // 
             // panelInformacion
@@ -99,22 +99,8 @@
             this.panelInformacion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInformacion.Location = new System.Drawing.Point(0, 0);
             this.panelInformacion.Name = "panelInformacion";
-            this.panelInformacion.Size = new System.Drawing.Size(364, 390);
+            this.panelInformacion.Size = new System.Drawing.Size(364, 417);
             this.panelInformacion.TabIndex = 0;
-            // 
-            // expandirButtonDenuncia
-            // 
-            this.expandirButtonDenuncia.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.expandirButtonDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.expandirButtonDenuncia.FlatAppearance.BorderSize = 0;
-            this.expandirButtonDenuncia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.expandirButtonDenuncia.Image = global::SoftwareSeguridad_V4.Properties.Resources.IconoExpandirVertical;
-            this.expandirButtonDenuncia.Location = new System.Drawing.Point(141, 368);
-            this.expandirButtonDenuncia.Name = "expandirButtonDenuncia";
-            this.expandirButtonDenuncia.Size = new System.Drawing.Size(75, 23);
-            this.expandirButtonDenuncia.TabIndex = 8;
-            this.expandirButtonDenuncia.UseVisualStyleBackColor = false;
-            this.expandirButtonDenuncia.Click += new System.EventHandler(this.expandirButtonDenuncia_Click);
             // 
             // dataGridViewTablaPlacas
             // 
@@ -149,7 +135,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridViewTablaPlacas.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewTablaPlacas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewTablaPlacas.Size = new System.Drawing.Size(364, 294);
+            this.dataGridViewTablaPlacas.Size = new System.Drawing.Size(364, 321);
             this.dataGridViewTablaPlacas.TabIndex = 7;
             // 
             // panelBusqueda
@@ -275,7 +261,7 @@
             this.panelDenunciaYImagen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDenunciaYImagen.Location = new System.Drawing.Point(0, 0);
             this.panelDenunciaYImagen.Name = "panelDenunciaYImagen";
-            this.panelDenunciaYImagen.Size = new System.Drawing.Size(364, 398);
+            this.panelDenunciaYImagen.Size = new System.Drawing.Size(364, 371);
             this.panelDenunciaYImagen.TabIndex = 0;
             // 
             // splitContainerImagenesDenuncia
@@ -392,6 +378,20 @@
             this.textBoxPlacaDenuncia.Size = new System.Drawing.Size(217, 26);
             this.textBoxPlacaDenuncia.TabIndex = 6;
             this.textBoxPlacaDenuncia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // expandirButtonDenuncia
+            // 
+            this.expandirButtonDenuncia.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.expandirButtonDenuncia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.expandirButtonDenuncia.FlatAppearance.BorderSize = 0;
+            this.expandirButtonDenuncia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.expandirButtonDenuncia.Image = global::SoftwareSeguridad_V4.Properties.Resources.IconoExpandirVertical;
+            this.expandirButtonDenuncia.Location = new System.Drawing.Point(141, 395);
+            this.expandirButtonDenuncia.Name = "expandirButtonDenuncia";
+            this.expandirButtonDenuncia.Size = new System.Drawing.Size(75, 23);
+            this.expandirButtonDenuncia.TabIndex = 8;
+            this.expandirButtonDenuncia.UseVisualStyleBackColor = false;
+            this.expandirButtonDenuncia.Click += new System.EventHandler(this.expandirButtonDenuncia_Click);
             // 
             // InfoTablaPlacas
             // 

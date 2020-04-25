@@ -22,7 +22,6 @@ namespace SoftwareSeguridad_V4
 
         private void InfoTablaPlacas_Load(object sender, EventArgs e)
         {
-            splitContainerInfoTablaPlacas.SplitterDistance=this.Height-405;
             splitContainerInfoTablaPlacas.Panel2Collapsed = true;
             height = splitContainerInfoTablaPlacas.SplitterDistance;
             LlenarTablaPlacas();
