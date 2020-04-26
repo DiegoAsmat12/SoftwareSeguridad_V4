@@ -16,7 +16,7 @@ namespace SoftwareSeguridad_V4
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             PestañaLogin login = new PestañaLogin();
-            login.FormClosed += Login_Closed;
+            login.FormClosed += Login_Closed; 
             login.Show();
             Application.Run();
         }

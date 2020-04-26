@@ -56,7 +56,7 @@
             this.panelOpcionesInicio = new System.Windows.Forms.Panel();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonSoporte = new System.Windows.Forms.Button();
-            this.buttonCerrarSesion = new System.Windows.Forms.Button();
+            this.buttonGuardarConfiguracion = new System.Windows.Forms.Button();
             this.panelBarraDeNavegacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerVistasInformacion)).BeginInit();
             this.splitContainerVistasInformacion.Panel1.SuspendLayout();
@@ -461,7 +461,7 @@
             this.panelOpcionesInicio.BackColor = System.Drawing.Color.Black;
             this.panelOpcionesInicio.Controls.Add(this.buttonSalir);
             this.panelOpcionesInicio.Controls.Add(this.buttonSoporte);
-            this.panelOpcionesInicio.Controls.Add(this.buttonCerrarSesion);
+            this.panelOpcionesInicio.Controls.Add(this.buttonGuardarConfiguracion);
             this.panelOpcionesInicio.Location = new System.Drawing.Point(4, 30);
             this.panelOpcionesInicio.Name = "panelOpcionesInicio";
             this.panelOpcionesInicio.Size = new System.Drawing.Size(120, 75);
@@ -483,6 +483,7 @@
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSalir.UseVisualStyleBackColor = false;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
             // buttonSoporte
             // 
@@ -500,21 +501,22 @@
             this.buttonSoporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonSoporte.UseVisualStyleBackColor = false;
             // 
-            // buttonCerrarSesion
+            // buttonGuardarConfiguracion
             // 
-            this.buttonCerrarSesion.BackColor = System.Drawing.Color.Transparent;
-            this.buttonCerrarSesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCerrarSesion.FlatAppearance.BorderSize = 0;
-            this.buttonCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCerrarSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.buttonCerrarSesion.Location = new System.Drawing.Point(0, 0);
-            this.buttonCerrarSesion.Name = "buttonCerrarSesion";
-            this.buttonCerrarSesion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonCerrarSesion.Size = new System.Drawing.Size(120, 23);
-            this.buttonCerrarSesion.TabIndex = 0;
-            this.buttonCerrarSesion.Text = "Cerrar Sesion";
-            this.buttonCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCerrarSesion.UseVisualStyleBackColor = false;
+            this.buttonGuardarConfiguracion.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGuardarConfiguracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonGuardarConfiguracion.FlatAppearance.BorderSize = 0;
+            this.buttonGuardarConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGuardarConfiguracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.buttonGuardarConfiguracion.Location = new System.Drawing.Point(0, 0);
+            this.buttonGuardarConfiguracion.Name = "buttonGuardarConfiguracion";
+            this.buttonGuardarConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonGuardarConfiguracion.Size = new System.Drawing.Size(120, 23);
+            this.buttonGuardarConfiguracion.TabIndex = 0;
+            this.buttonGuardarConfiguracion.Text = "Guardar";
+            this.buttonGuardarConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonGuardarConfiguracion.UseVisualStyleBackColor = false;
+            this.buttonGuardarConfiguracion.Click += new System.EventHandler(this.buttonGuardarConfiguracion_Click);
             // 
             // SoftwareSeguridad
             // 
@@ -565,7 +567,7 @@
         private System.Windows.Forms.Panel panelOpcionesInicio;
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Button buttonSoporte;
-        private System.Windows.Forms.Button buttonCerrarSesion;
+        private System.Windows.Forms.Button buttonGuardarConfiguracion;
         private System.Windows.Forms.SplitContainer splitContainerInformacion;
         private System.Windows.Forms.Panel panelSeleccionOpcionesInfo2;
         private System.Windows.Forms.Button buttonSeleccionDeInfo2;
