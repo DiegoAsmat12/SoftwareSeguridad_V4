@@ -1,4 +1,5 @@
 ﻿using Ozeki.Media.IPCamera;
+using SoftwareSeguridad_V4.Properties;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -40,8 +41,6 @@ namespace SoftwareSeguridad_V4
             AbrirFormularioVistas<InfoTablaPlacas>(panelInfoForm2);
             AbrirFormularioVistas<InfoTablaListaNegra>(panelInfoForm2);
             AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm2);
-
-
             //imagenOriginalBotonExpandir = buttonExpandirContraer.BackgroundImage;
             //splitContainerHerramientas.Panel1Collapsed = true;
         }
@@ -260,7 +259,21 @@ namespace SoftwareSeguridad_V4
 
         private void buttonGuardarConfiguracion_Click(object sender, EventArgs e)
         {
-
+            CrearBotonDeConfiguracionUsuario();
+        }
+        private void CrearBotonDeConfiguracionUsuario()
+        {
+            Button button = new Button();
+            button.Parent = panelBarraDeNavegacion;
+            button.Anchor = buttonVistaMapa.Anchor;
+            button.Location = new Point(buttonVistaMapa.Location.X + 62, buttonVistaMapa.Location.Y);
+            button.Text = "Personal";
+            button.TextAlign = buttonVistaCamaras.TextAlign;
+            button.Font = buttonVistaCamaras.Font;
+            button.BackColor = buttonVistaMapa.BackColor;
+            button.ForeColor = buttonVistaMapa.ForeColor;
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 0;
         }
 
 
