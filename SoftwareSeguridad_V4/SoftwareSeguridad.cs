@@ -248,7 +248,14 @@ namespace SoftwareSeguridad_V4
             AbrirFormularioVistas<InfoTablaSerenazgos>(panelInfoForm2);
         }
 
-        
+        private void SoftwareSeguridad_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+
+
 
 
         /*private void buttonExpandirContraer_Click(object sender, EventArgs e)

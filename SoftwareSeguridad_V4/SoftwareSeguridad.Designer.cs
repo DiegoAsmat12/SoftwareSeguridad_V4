@@ -529,6 +529,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoftwareSeguridad";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SoftwareSeguridad_FormClosing);
             this.Load += new System.EventHandler(this.SoftwareSeguridad_Load);
             this.panelBarraDeNavegacion.ResumeLayout(false);
             this.splitContainerVistasInformacion.Panel1.ResumeLayout(false);
