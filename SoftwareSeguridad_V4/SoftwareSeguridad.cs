@@ -276,13 +276,6 @@ namespace SoftwareSeguridad_V4
             button.FlatAppearance.BorderSize = 0;
         }
 
-
-
-
-
-
-
-
         /*private void buttonExpandirContraer_Click(object sender, EventArgs e)
         {
             if (buttonExpandirContraer.BackgroundImage == imagenOriginalBotonExpandir)

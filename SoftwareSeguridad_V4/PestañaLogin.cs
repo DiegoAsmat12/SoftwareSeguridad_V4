@@ -16,7 +16,6 @@ namespace SoftwareSeguridad_V4
         {
             InitializeComponent();
         }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();

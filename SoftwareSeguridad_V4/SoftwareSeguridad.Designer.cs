@@ -32,7 +32,6 @@
             this.buttonVistaMapa = new System.Windows.Forms.Button();
             this.buttonVistaSeguimiento = new System.Windows.Forms.Button();
             this.buttonVistaCamaras = new System.Windows.Forms.Button();
-            this.buttonOpcionesInicio = new System.Windows.Forms.Button();
             this.splitContainerVistasInformacion = new System.Windows.Forms.SplitContainer();
             this.panelVistas = new System.Windows.Forms.Panel();
             this.panelInformacion = new System.Windows.Forms.Panel();
@@ -53,10 +52,11 @@
             this.buttonTablaCamaras2 = new System.Windows.Forms.Button();
             this.panelSeleccionOpcionesInfo2 = new System.Windows.Forms.Panel();
             this.buttonSeleccionDeInfo2 = new System.Windows.Forms.Button();
-            this.panelOpcionesInicio = new System.Windows.Forms.Panel();
-            this.buttonSalir = new System.Windows.Forms.Button();
-            this.buttonSoporte = new System.Windows.Forms.Button();
             this.buttonGuardarConfiguracion = new System.Windows.Forms.Button();
+            this.buttonSoporte = new System.Windows.Forms.Button();
+            this.buttonSalir = new System.Windows.Forms.Button();
+            this.panelOpcionesInicio = new System.Windows.Forms.Panel();
+            this.buttonOpcionesInicio = new System.Windows.Forms.Button();
             this.panelBarraDeNavegacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerVistasInformacion)).BeginInit();
             this.splitContainerVistasInformacion.Panel1.SuspendLayout();
@@ -83,6 +83,7 @@
             this.panelBarraDeNavegacion.Controls.Add(this.buttonVistaSeguimiento);
             this.panelBarraDeNavegacion.Controls.Add(this.buttonVistaCamaras);
             this.panelBarraDeNavegacion.Controls.Add(this.buttonOpcionesInicio);
+            this.panelBarraDeNavegacion.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelBarraDeNavegacion.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraDeNavegacion.Location = new System.Drawing.Point(0, 0);
             this.panelBarraDeNavegacion.Name = "panelBarraDeNavegacion";
@@ -139,19 +140,6 @@
             this.buttonVistaCamaras.Click += new System.EventHandler(this.buttonVistaCamaras_Click);
             this.buttonVistaCamaras.Enter += new System.EventHandler(this.buttonVistaCamaras_MouseEnter);
             this.buttonVistaCamaras.Leave += new System.EventHandler(this.buttonVistaCamaras_MouseLeave);
-            // 
-            // buttonOpcionesInicio
-            // 
-            this.buttonOpcionesInicio.BackgroundImage = global::SoftwareSeguridad_V4.Properties.Resources.LogoAPresentar;
-            this.buttonOpcionesInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonOpcionesInicio.FlatAppearance.BorderSize = 0;
-            this.buttonOpcionesInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpcionesInicio.Location = new System.Drawing.Point(4, 4);
-            this.buttonOpcionesInicio.Name = "buttonOpcionesInicio";
-            this.buttonOpcionesInicio.Size = new System.Drawing.Size(29, 23);
-            this.buttonOpcionesInicio.TabIndex = 0;
-            this.buttonOpcionesInicio.UseVisualStyleBackColor = true;
-            this.buttonOpcionesInicio.Click += new System.EventHandler(this.buttonOpcionesInicio_Click);
             // 
             // splitContainerVistasInformacion
             // 
@@ -455,18 +443,38 @@
             this.buttonSeleccionDeInfo2.UseVisualStyleBackColor = true;
             this.buttonSeleccionDeInfo2.Click += new System.EventHandler(this.buttonSeleccionDeInfo2_Click);
             // 
-            // panelOpcionesInicio
+            // buttonGuardarConfiguracion
             // 
-            this.panelOpcionesInicio.AutoScroll = true;
-            this.panelOpcionesInicio.BackColor = System.Drawing.Color.Black;
-            this.panelOpcionesInicio.Controls.Add(this.buttonSalir);
-            this.panelOpcionesInicio.Controls.Add(this.buttonSoporte);
-            this.panelOpcionesInicio.Controls.Add(this.buttonGuardarConfiguracion);
-            this.panelOpcionesInicio.Location = new System.Drawing.Point(4, 30);
-            this.panelOpcionesInicio.Name = "panelOpcionesInicio";
-            this.panelOpcionesInicio.Size = new System.Drawing.Size(120, 75);
-            this.panelOpcionesInicio.TabIndex = 13;
-            this.panelOpcionesInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOpcionesInicio_Paint);
+            this.buttonGuardarConfiguracion.BackColor = System.Drawing.Color.Transparent;
+            this.buttonGuardarConfiguracion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonGuardarConfiguracion.FlatAppearance.BorderSize = 0;
+            this.buttonGuardarConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGuardarConfiguracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.buttonGuardarConfiguracion.Location = new System.Drawing.Point(0, 0);
+            this.buttonGuardarConfiguracion.Name = "buttonGuardarConfiguracion";
+            this.buttonGuardarConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonGuardarConfiguracion.Size = new System.Drawing.Size(120, 23);
+            this.buttonGuardarConfiguracion.TabIndex = 0;
+            this.buttonGuardarConfiguracion.Text = "Guardar";
+            this.buttonGuardarConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonGuardarConfiguracion.UseVisualStyleBackColor = false;
+            this.buttonGuardarConfiguracion.Click += new System.EventHandler(this.buttonGuardarConfiguracion_Click);
+            // 
+            // buttonSoporte
+            // 
+            this.buttonSoporte.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSoporte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonSoporte.FlatAppearance.BorderSize = 0;
+            this.buttonSoporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSoporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            this.buttonSoporte.Location = new System.Drawing.Point(0, 23);
+            this.buttonSoporte.Name = "buttonSoporte";
+            this.buttonSoporte.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonSoporte.Size = new System.Drawing.Size(120, 23);
+            this.buttonSoporte.TabIndex = 1;
+            this.buttonSoporte.Text = "Soporte";
+            this.buttonSoporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSoporte.UseVisualStyleBackColor = false;
             // 
             // buttonSalir
             // 
@@ -485,38 +493,31 @@
             this.buttonSalir.UseVisualStyleBackColor = false;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
-            // buttonSoporte
+            // panelOpcionesInicio
             // 
-            this.buttonSoporte.BackColor = System.Drawing.Color.Transparent;
-            this.buttonSoporte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonSoporte.FlatAppearance.BorderSize = 0;
-            this.buttonSoporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSoporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.buttonSoporte.Location = new System.Drawing.Point(0, 23);
-            this.buttonSoporte.Name = "buttonSoporte";
-            this.buttonSoporte.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonSoporte.Size = new System.Drawing.Size(120, 23);
-            this.buttonSoporte.TabIndex = 1;
-            this.buttonSoporte.Text = "Soporte";
-            this.buttonSoporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSoporte.UseVisualStyleBackColor = false;
+            this.panelOpcionesInicio.AutoScroll = true;
+            this.panelOpcionesInicio.BackColor = System.Drawing.Color.Black;
+            this.panelOpcionesInicio.Controls.Add(this.buttonSalir);
+            this.panelOpcionesInicio.Controls.Add(this.buttonSoporte);
+            this.panelOpcionesInicio.Controls.Add(this.buttonGuardarConfiguracion);
+            this.panelOpcionesInicio.Location = new System.Drawing.Point(4, 30);
+            this.panelOpcionesInicio.Name = "panelOpcionesInicio";
+            this.panelOpcionesInicio.Size = new System.Drawing.Size(120, 75);
+            this.panelOpcionesInicio.TabIndex = 13;
+            this.panelOpcionesInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelOpcionesInicio_Paint);
             // 
-            // buttonGuardarConfiguracion
+            // buttonOpcionesInicio
             // 
-            this.buttonGuardarConfiguracion.BackColor = System.Drawing.Color.Transparent;
-            this.buttonGuardarConfiguracion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonGuardarConfiguracion.FlatAppearance.BorderSize = 0;
-            this.buttonGuardarConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGuardarConfiguracion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.buttonGuardarConfiguracion.Location = new System.Drawing.Point(0, 0);
-            this.buttonGuardarConfiguracion.Name = "buttonGuardarConfiguracion";
-            this.buttonGuardarConfiguracion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonGuardarConfiguracion.Size = new System.Drawing.Size(120, 23);
-            this.buttonGuardarConfiguracion.TabIndex = 0;
-            this.buttonGuardarConfiguracion.Text = "Guardar";
-            this.buttonGuardarConfiguracion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonGuardarConfiguracion.UseVisualStyleBackColor = false;
-            this.buttonGuardarConfiguracion.Click += new System.EventHandler(this.buttonGuardarConfiguracion_Click);
+            this.buttonOpcionesInicio.BackgroundImage = global::SoftwareSeguridad_V4.Properties.Resources.LogoAPresentar;
+            this.buttonOpcionesInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonOpcionesInicio.FlatAppearance.BorderSize = 0;
+            this.buttonOpcionesInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpcionesInicio.Location = new System.Drawing.Point(4, 4);
+            this.buttonOpcionesInicio.Name = "buttonOpcionesInicio";
+            this.buttonOpcionesInicio.Size = new System.Drawing.Size(29, 23);
+            this.buttonOpcionesInicio.TabIndex = 0;
+            this.buttonOpcionesInicio.UseVisualStyleBackColor = true;
+            this.buttonOpcionesInicio.Click += new System.EventHandler(this.buttonOpcionesInicio_Click);
             // 
             // SoftwareSeguridad
             // 
@@ -526,7 +527,7 @@
             this.Controls.Add(this.panelOpcionesInicio);
             this.Controls.Add(this.splitContainerVistasInformacion);
             this.Controls.Add(this.panelBarraDeNavegacion);
-            this.MinimumSize = new System.Drawing.Size(1200, 900);
+            this.MinimumSize = new System.Drawing.Size(1200, 858);
             this.Name = "SoftwareSeguridad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoftwareSeguridad";
@@ -564,10 +565,6 @@
         private System.Windows.Forms.SplitContainer splitContainerVistasInformacion;
         private System.Windows.Forms.Panel panelVistas;
         private System.Windows.Forms.Panel panelInformacion;
-        private System.Windows.Forms.Panel panelOpcionesInicio;
-        private System.Windows.Forms.Button buttonSalir;
-        private System.Windows.Forms.Button buttonSoporte;
-        private System.Windows.Forms.Button buttonGuardarConfiguracion;
         private System.Windows.Forms.SplitContainer splitContainerInformacion;
         private System.Windows.Forms.Panel panelSeleccionOpcionesInfo2;
         private System.Windows.Forms.Button buttonSeleccionDeInfo2;
@@ -585,6 +582,10 @@
         private System.Windows.Forms.Button buttonTablaListaNegra1;
         private System.Windows.Forms.Button buttonTablaPlacas1;
         private System.Windows.Forms.Button buttonTablaCamaras1;
+        private System.Windows.Forms.Button buttonGuardarConfiguracion;
+        private System.Windows.Forms.Button buttonSoporte;
+        private System.Windows.Forms.Button buttonSalir;
+        private System.Windows.Forms.Panel panelOpcionesInicio;
     }
 }
 
